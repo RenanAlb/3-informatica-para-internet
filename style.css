@@ -1,0 +1,423 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Petit+Formal+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:rgb(252, 238, 244);
+  overflow-x: hidden;
+}
+
+body .noise {
+  background: rgb(252, 238, 244);
+  background-image: url(img/noise2.png);
+  background-repeat: repeat;
+  width: 100%;
+  height: 100dvh;
+  position: fixed;
+  background-blend-mode: overlay;
+  top: 0;
+  left: 0;
+}
+
+body .blur {
+  width: 100%;
+  height: 100dvh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.059), transparent, transparent, transparent, rgba(0, 0, 0, 0.059));
+  position: fixed;
+  z-index: 20;
+  pointer-events: none;
+}
+
+body main {
+  background-color: transparent;
+  position: relative;
+  z-index: 4;
+  padding: 15px;
+}
+
+body main h1 {
+  font-family: 'Petit Formal Script', serif;
+  color: rgb(27, 27, 27);
+  font-weight: 400;
+  font-size: 8em;
+  margin-bottom: 50px;
+  width: 50%;
+  height: 100dvh;
+  transform: translateY(-300px);
+  transform: translateX(-300px);
+  opacity: 0;
+}
+
+body main > div {
+  position: relative;
+  z-index: 7;
+}
+
+body main div p {
+  line-height: 1.4em;
+  font-size: 2.6em;
+  font-weight: 300;
+  font-family: 'Epilogue', serif;
+  color: rgb(0, 0, 0);
+  z-index: 3;
+  position: relative;
+}
+
+body main #introducao {
+  opacity: 0;
+  margin: 200px 0;
+}
+
+body main #introducao #img1 {
+  object-fit: cover;
+  width: 50%;
+  height: 670px;
+  position: absolute;
+  right: 15px;
+  top: 400px;
+  transform: translateX(1000px);
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+}
+
+body main #introducao #img2 {
+  object-fit: cover;
+  width: 45%;
+  height: 670px;
+  position: absolute;
+  left: 15px;
+  top: 500px;
+  transform: translateX(-1000px);
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+}
+
+body main #introducao #img3 {
+  object-fit: cover;
+  width: 45%;
+  height: 670px;
+  position: absolute;
+  right: 50px;
+  top: 990px;
+  transform: translateX(1000px);
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+}
+
+body main #introducao #img7 {
+  object-fit: cover;
+  width: 42%;
+  height: 670px;
+  position: absolute;
+  left: 50px;
+  top: 1090px;
+  transform: translateX(-1000px);
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+}
+
+body main #meio {
+  opacity: 0;
+  margin: 1650px 0 900px 0;
+}
+
+body main #meio #img4 {
+  object-fit: cover;
+  width: 50%;
+  height: 670px;
+  position: absolute;
+  right: 15px;
+  top: 510px;
+  transform: translateX(1000px);
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+}
+
+body main #meio #img5 {
+  object-fit: cover;
+  width: 45%;
+  height: 670px;
+  position: absolute;
+  left: 15px;
+  top: 610px;
+  transform: translateX(-1000px);
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+}
+
+body main #meio #img6 {
+  object-fit: cover;
+  width: 45%;
+  height: 500px;
+  position: absolute;
+  right: 50px;
+  top: 1100px;
+  transform: translateX(1000px);
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+}
+
+body main #meio #img8 {
+  object-fit: cover;
+  width: 40%;
+  height: 470px;
+  position: absolute;
+  left: 50px;
+  top: 1250px;
+  transform: translateX(-1000px);
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+}
+
+body main #fim {
+  margin-top: 1680px;
+  opacity: 0;
+}
+
+body main #proposta {
+  width: 100%;
+  height: 100dvh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+body main #proposta .buttons {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  position: relative;
+}
+
+body main #proposta #button-nao {
+  width: 400px;
+  left: 46%;
+  transform: translate(-50%);
+  top: 120px;
+}
+body main #proposta #button-sim {
+  width: 400px;
+  left: 46%;
+  transform: translate(-50%);
+}
+
+body main #proposta #button-nao, #button-sim {
+  position: absolute;
+}
+
+body main #proposta .buttons button {
+  background-color: pink;
+  padding: 30px;
+  font-size: 3em;
+  font-family: 'Epilogue', serif;
+  margin: 0 20px;
+  border: 1px solid rgb(188, 188, 188);
+  border-radius: 5px;
+}
+
+body main #proposta .buttons button:hover {
+  background-color: rgb(37, 14, 22);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+body main #proposta .sim {
+  background-color: rgb(30, 30, 30);
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  transition: all 0.3s;
+}
+
+body main #proposta .sim p {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  animation: marquee 4.1s linear infinite;
+  font-size: 100dvh;
+}
+body main #proposta .nao {
+  background-color: rgb(30, 30, 30);
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  transition: all 0.3s;
+}
+
+body main #proposta .nao p {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  animation: marquee 4.1s linear infinite;
+  font-size: 100dvh;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+@media screen and (max-width: 820px) {
+  body main h1 {
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 904px) {
+  body main div p {
+    line-height: 1.4em;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: 'Epilogue', serif;
+    color: rgb(0, 0, 0);
+    z-index: 3;
+    position: relative;
+  }
+
+  body main #proposta #button-nao {
+    width: 100%;
+    top: 120px;
+  }
+  body main #proposta #button-sim {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+  body main div p {
+    line-height: 1.4em;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: 'Epilogue', serif;
+    color: rgb(0, 0, 0);
+    z-index: 3;
+    position: relative;
+  }
+}
+
+
+@media screen and (max-width: 1118px) {
+  body main #introducao #img1 {
+    object-fit: cover;
+    width: 100%;
+    height: 670px;
+    position: absolute;
+    right: 15px;
+    top: 440px;
+    transform: translateX(1000px);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+  }
+
+  body main #introducao #img2 {
+    object-fit: cover;
+    width: 100%;
+    height: 670px;
+    position: absolute;
+    left: 15px;
+    top: 1040px;
+    transform: translateX(-1000px);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+  }
+
+  body main #introducao #img3 {
+    object-fit: cover;
+    width: 100%;
+    height: 670px;
+    position: absolute;
+    right: 50px;
+    top: 1650px;
+    transform: translateX(1000px);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+  }
+
+  body main #introducao #img7 {
+    object-fit: cover;
+    width: 100%;
+    height: 670px;
+    position: absolute;
+    left: 50px;
+    top: 2290px;
+    transform: translateX(-1000px);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+  }
+
+  body main #meio {
+    opacity: 0;
+    margin: 2800px 0 900px 0;
+  }
+
+  body main #meio #img4 {
+    object-fit: cover;
+    width: 100%;
+    height: 670px;
+    position: absolute;
+    right: 15px;
+    top: 510px;
+    transform: translateX(1000px);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+  }
+
+  body main #meio #img5 {
+    object-fit: cover;
+    width: 100%;
+    height: 1070px;
+    position: absolute;
+    left: 15px;
+    top: 1110px;
+    transform: translateX(-1000px);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+  }
+
+  body main #meio #img6 {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    right: 50px;
+    top: 2150px;
+    transform: translateX(1000px);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+  }
+
+  body main #meio #img8 {
+    object-fit: cover;
+    width: 100%;
+    height: 470px;
+    position: absolute;
+    left: 50px;
+    top: 2600px;
+    transform: translateX(-1000px);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.459);
+  }
+
+  body main #fim {
+    margin-top: 2780px;
+    opacity: 0;
+  }
+
+}
