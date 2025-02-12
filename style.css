@@ -22,16 +22,6 @@ body .noise {
   top: 0;
   left: 0;
 }
-
-body .blur {
-  width: 100%;
-  height: 100dvh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.059), transparent, transparent, transparent, rgba(0, 0, 0, 0.059));
-  position: fixed;
-  z-index: 20;
-  pointer-events: none;
-}
-
 body main {
   background-color: transparent;
   position: relative;
@@ -47,6 +37,7 @@ body main h1 {
   margin-bottom: 50px;
   width: 50%;
   height: 100dvh;
+  margin-left: 20px;
   transform: translateY(-300px);
   transform: translateX(-300px);
   opacity: 0;
