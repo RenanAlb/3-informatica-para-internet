@@ -23,6 +23,7 @@ body .noise {
   left: 0;
 }
 body main {
+  width: 100%;
   background-color: transparent;
   position: relative;
   z-index: 4;
@@ -37,7 +38,7 @@ body main h1 {
   margin-bottom: 50px;
   width: 50%;
   height: 100dvh;
-  margin-left: 20px;
+  margin-left: 45px;
   transform: translateY(-300px);
   transform: translateX(-300px);
   opacity: 0;
